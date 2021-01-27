@@ -1,0 +1,21 @@
+<div class="container">
+<h2>{{title}}</h2>
+    <form class="form-group" #addForm="ngForm" (ngSubmit)="addPerson(addForm.value)">
+        <label for="firstname">First Name : </label>
+        <input  type="text" name="firstname" id="" class="form-control" [ngModel]="firstName" required>
+        <label for="lastname">Last Name : </label>
+        <input  type="text" name="lastname" id="" class="form-control" [ngModel]="lastName" required>
+        <label for="age">Age</label>
+        <input  type="number" name="age" id="" class="form-control" [ngModel]="age" required>
+        <label for="nationality">Nationality : </label>
+        <input  type="text" name="nationality" id="" class="form-control" [ngModel]="nationality">
+        <label for="gender">Gender : </label>
+        <select [ngModel]="gender" name="gender" id="gender" class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        
+        <button class="btn btn-success m-3" type="submit" >Save</button>
+        <input class="btn btn-danger" type="button" value="Cancel" (click)="viewPersonList()" >
+    </form>
+</div>

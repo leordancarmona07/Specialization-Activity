@@ -1,0 +1,18 @@
+<div class="container">
+    <form class="form-group" [formGroup]="personForm" (ngSubmit)="updatePerson(personForm.value)">
+        <h1>Update Form</h1>
+        <label for="firstname">First Name : </label>
+        <input  type="text" name="firstname" id="" class="form-control" formControlName="firstName" required>
+        <label for="lastname">Last Name : </label>
+        <input  type="text" name="lastname" id="" class="form-control" formControlName="lastName" required>
+        <label for="age">Age</label>
+        <input  type="number" name="age" id="" class="form-control" formControlName="age" required>
+        <label for="nationality">Nationality : </label>
+        <input  type="text" name="nationality" id="" class="form-control" formControlName="nationality">
+        <label for="gender">Gender : </label>
+        <input  type="text" name="gender" id="" class="form-control" formControlName="gender">
+        
+        <button class="btn btn-success m-3" type="submit" >Save</button>
+        <input class="btn btn-danger" type="button" value="Cancel" (click) = 'cancelUpdatePerson()' >
+    </form>
+</div>

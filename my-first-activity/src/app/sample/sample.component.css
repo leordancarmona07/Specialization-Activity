@@ -1,0 +1,15 @@
+.container{
+    background-color: rosybrown;
+    margin-bottom: 5px;
+    padding: 2px 2px;
+}
+
+.collapsable{
+    background-color: gray;
+    
+}
+
+#update{
+    margin-left : 10%;
+    margin-right: 50%;
+}

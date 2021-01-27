@@ -1,0 +1,27 @@
+<!-- <div class="container">
+    <h1>Sample Component</h1>
+    <h3>Firstname : {{firstnameS}}</h3>
+    <h3>Lastname : {{lastnameS}}</h3>
+    <h3>Age : {{ageS}}</h3>
+
+    <button class="btn btn-primary" (click)="getFullName()">Get Fullname</button>
+    <button class="btn btn-success" (click)="getAge()">Get Age</button>
+<br>
+<br>
+</div> -->
+
+<div class="container">
+    <!-- <h4>{{nameS}}</h4> -->
+    <div class="form-inline">
+        <input type="button" class="btn btn-danger" value="Delete" (click)="deletePerson(person)">
+        <input id="update" type="button" class="btn btn-warning" value="Update" (click)="viewUpdatePersonForm(person)">
+        <h4 (click)="showHide()">{{person.firstname}} {{person.lastname}}</h4>
+    </div>
+</div>
+<div class="collapsable" [hidden]="hidden">
+    <h5> Firstname : {{person.firstname}}</h5>
+    <h5>Lastname : {{person.lastname}}</h5>
+    <h5>Age : {{person.age}}</h5>
+    <h5 *ngIf="person.nationality">Nationality : {{person.nationality}}</h5>
+    <h5>Gender : {{person.gender}}</h5>
+</div>

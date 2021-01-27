@@ -1,0 +1,9 @@
+h1{
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    padding-bottom: 5px;
+    border-bottom: 4px solid darkblue;
+}
+.container{
+    text-align: center;
+}
